@@ -59,9 +59,7 @@ var HEROS: Hero[] = [
 
 class AppComponent {
   public title = 'Tour of Heroes';
-
   public heros = HEROS;
-
   public selectedHero: Hero;
 
   onSelected(hero: Hero) {
@@ -71,7 +69,6 @@ class AppComponent {
   getSelectedClass(hero: Hero) {
     return { 'selected': hero === this.selectedHero };
   }
-
 }
 
 bootstrap(AppComponent);
